@@ -1,9 +1,15 @@
-FROM node:lastest
+FROM node:latest
+USER root
 
 WORKDIR /client
 COPY . /client
 
-RUN npm install
-RUN npm install -g expo-cli
 
+ARG API_URL
+ENV REACT_APP_HOST_IP_ADDRESS $API_URL
+
+RUN npm install
 COPY . ./
+
+
+RUN npm run build

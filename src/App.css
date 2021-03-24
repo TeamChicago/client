@@ -8,8 +8,9 @@
 }
 
 .black-nav {
+  display: flex;
+  justify-content: space-between;
   background: black;
-  width: 100%;
   display: flex;
   color: white;
   padding: 20px;
@@ -19,20 +20,22 @@
 
 .box {
   align-self: center;
+  display: flex;
   text-align: center;
 }
 
 .authbox {
-  width: 8rem;
-  height: 3rem;
-  line-height: 3rem;
+  width: 6.5rem;
+  height: 2.5rem;
+  font-size: 20px;
   border-radius: 0.8rem;
+  line-height: 2.5rem;
   display: inline-block;
-  text-align: center;
   background-color: gray;
   color: white;
   align-items: center;
-  border: 0.1rem solid white;
-  margin: 7rem;
+  border: 0.1rem solid black;
+  margin-right: 1rem;
   text-decoration: none;
+  justify-content: space-between;
 }

@@ -11,21 +11,27 @@ function App() {
     <Router history={history}>
       <div className="App">
         <div className="black-nav">
-         <div> Chicago 졸업작품 </div>
-        </div>
-        <div className="box">
-          <Link className="authbox" to={"/register"}>
-            채용하기
-          </Link>
-          <Link className="authbox" to={"/apply"}>
-            지원하기
-          </Link>
+          <div className="box">
+            <Link to={"/"} style={{ color: 'inherit', textDecoration: 'none' }}>
+              <a> Chicago 졸업작품 </a>
+            </Link>
+          </div>
+          <>
+            <div className="box">
+             <Link className="authbox" to={"/register"}>
+              채용하기
+              </Link>
+             <Link className="authbox" to={"/apply"}>
+               지원하기
+              </Link>
+            </div>
+          </>
         </div>
       </div>
       <div>
         <Switch>
-          <Route exact path="/register" component={Register} />
-          <Route exact path="/apply" component={Apply} />
+          <Route path="/register" component={Register} />
+          <Route path="/apply" component={Apply} />
         </Switch>
       </div>
     </Router>

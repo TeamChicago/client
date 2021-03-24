@@ -3,9 +3,7 @@ import React from 'react';
 function Apply() {
 
   return(
-    <div className="black-nav">
-      <h1> Apply page </h1>
-    </div>
+      <h1> 지원자가 지원하는 페이지 </h1>
   )
 }
 

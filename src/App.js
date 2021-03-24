@@ -4,7 +4,7 @@ import { history } from "./history";
 
 import Apply from "./components/Apply";
 import Register from "./components/Register";
-
+import Home from "./components/Home";
 
 function App() {
   return (
@@ -30,6 +30,7 @@ function App() {
       </div>
       <div>
         <Switch>
+          <Route exact path={["/", "/home"]} component={Home} />
           <Route path="/register" component={Register} />
           <Route path="/apply" component={Apply} />
         </Switch>

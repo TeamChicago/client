@@ -2,8 +2,8 @@ import { Link, Route, Router, Switch } from "react-router-dom";
 import './App.css';
 import { history } from "./history";
 
-import Apply from "./components/Apply";
-import Register from "./components/Register";
+
+import PostNews from "./components/PostNews";
 import Home from "./components/Home";
 
 function App() {
@@ -18,11 +18,8 @@ function App() {
           </div>
           <>
             <div className="box">
-             <Link className="authbox" to={"/register"}>
-              채용하기
-              </Link>
-             <Link className="authbox" to={"/apply"}>
-               지원하기
+              <Link className="authbox" to={"/register"}>
+                뉴스 올리기
               </Link>
             </div>
           </>
@@ -31,8 +28,7 @@ function App() {
       <div>
         <Switch>
           <Route exact path={["/", "/home"]} component={Home} />
-          <Route path="/register" component={Register} />
-          <Route path="/apply" component={Apply} />
+          <Route path="/register" component={PostNews} />
         </Switch>
       </div>
     </Router>

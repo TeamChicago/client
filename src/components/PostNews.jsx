@@ -4,7 +4,7 @@ function Register() {
 
   return(
 
-      <h1> 채용자가 등록하는 페이지 </h1>
+      <h1> 뉴스 올리기 (모달로 할 예정) </h1>
 
   )
 }

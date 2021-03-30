@@ -1,0 +1,10 @@
+.cbnu-img {
+    align-self: center;
+    display: flex;
+    display: block;
+    text-align: center;
+}
+.descriptions {
+    text-align: center;
+    font-size: medium;
+}

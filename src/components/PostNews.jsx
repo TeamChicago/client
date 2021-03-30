@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Register() {
+function PostNews() {
 
   return(
 
@@ -9,4 +9,4 @@ function Register() {
   )
 }
 
-export default Register;
+export default PostNews;

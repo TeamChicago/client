@@ -1,5 +1,5 @@
 
-import { Link, Route, Router, Switch } from "react-router-dom";
+import { Link, Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import './App.css';
 import { history } from "./history";
 

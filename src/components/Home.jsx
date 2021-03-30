@@ -3,6 +3,7 @@ import "./Home.css";
 import React from 'react';
 import cbnu from '../images/cbnu.jpg'
 
+
 function Home() {
 
   return(
@@ -20,5 +21,6 @@ function Home() {
       </div>
   )
 }
+
 
 export default Home;

@@ -1,4 +1,5 @@
-import { Link, Route, Router, Switch } from "react-router-dom";
+
+import { Link, Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import './App.css';
 import { history } from "./history";
 
@@ -27,8 +28,10 @@ function App() {
       </div>
       <div>
         <Switch>
+
           <Route exact path={["/", "/home"]} component={Home} />
           <Route path="/register" component={PostNews} />
+
         </Switch>
       </div>
     </Router>

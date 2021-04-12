@@ -2,9 +2,9 @@ import React from 'react';
 
 function PostNews() {
 
-  return(
+  return (
 
-      <h1> 뉴스 올리기 (모달로 할 예정) </h1>
+    <h1> 뉴스 올리기 (모달로 할 예정) </h1>
 
   )
 }

@@ -2,14 +2,19 @@ import "./Home.css";
 
 import React from 'react';
 import cbnu from '../images/cbnu.jpg'
+import NewsList from './NewsList'
 
 
 function Home() {
+  // const dispatch = useDispatch();
 
   return(
       <div>
         <div className="cbnu-img">
           <img  src={cbnu} />
+        </div>
+        <div>
+          <NewsList/>
         </div>
         <div className="descriptions">
           <h2>프로젝트 설명</h2>
@@ -21,6 +26,5 @@ function Home() {
       </div>
   )
 }
-
 
 export default Home;

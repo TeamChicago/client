@@ -1,0 +1,11 @@
+.post {
+    width: 40%;
+    height: 15rem;
+    margin-top: 15px;
+    background-color: #E2DBDB;
+    border-radius: 5px;
+}
+
+.post-box {
+    width: 40%;
+}

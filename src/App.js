@@ -29,10 +29,8 @@ function App() {
       </div>
       <div>
         <Switch>
-
           <Route exact path={["/", "/home"]} component={Home} />
           <Route path="/register" component={PostNews} />
-
         </Switch>
       </div>
     </Router>

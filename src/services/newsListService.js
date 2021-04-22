@@ -5,7 +5,7 @@ class NewsListService {
   async getNewsList() {
     return await axios
       .get(
-        `${API_URL}/news/`
+        `${API_URL}/news`
       )
       .then((res) => {
         return res.data;

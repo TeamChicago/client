@@ -32,14 +32,9 @@ function NewsList(props) {
     console.log(newsList);
   },[]);
 
-  // const clickevent = () => {
-  //   getNewsList();
-  //   console.log(newsList);
-  // };
 
   return (
     <div>
-      {/* <button onClick={clickevent}>API 호출 test</button> */}
       {newsList.results.map((news) => (
         <NewsBox news={news} key={news.id} />
       ))}

@@ -1,13 +1,14 @@
 import './PostNews.css';
 import React, { useState } from "react";
 import{ Component } from 'react';
-
+import NewsPostService from "../services/newsPostService"
 class PostNews extends Component {
   constructor(props){
     super(props)
     this.state = {
       titleValue : '',
-      contentValue : ''
+      contentValue : '',
+      writerValue: '',
     }
   }
 
@@ -17,10 +18,11 @@ class PostNews extends Component {
   submitHandler = e => {
     e.preventDefault()
     console.log(this.state)
+    NewsPostService.postNews(this.state)
   }
 
   render() {
-    const {titleValue, contentValue} = this.state
+    const {titleValue, contentValue, writerValue} = this.state
     return (
       <div className="PostNews">
       <h1>News Posting</h1>
@@ -32,6 +34,14 @@ class PostNews extends Component {
             value={titleValue}
             onChange = {this.changeHandler}
             placeholder='제목' />
+        </div>
+        <div>
+          <input className="title-input"
+            type='text'
+            name= "writerValue"
+            value={writerValue}
+            onChange = {this.changeHandler}
+            placeholder='작성자' />
         </div>
         <div className='form-wrapper'>
           <textarea className="news-area"

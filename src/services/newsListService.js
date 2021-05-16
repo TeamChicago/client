@@ -8,6 +8,10 @@ class NewsListService {
         `${API_URL}/news`
       )
       .then((res) => {
+        for(var i=0; i<res.data.length; i++)
+          console.log(res.data[i]);
+        
+        console.log("api 호출");
         return res.data;
       });
   }

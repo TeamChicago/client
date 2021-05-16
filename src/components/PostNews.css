@@ -1,0 +1,38 @@
+.PostNews {
+    text-align: center;
+  }
+  
+  .form-wrapper{
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .title-input {
+    background-color: #E2DBDB;
+    border: none;
+    border-radius: 5px;
+    width: 500px;
+    height: 40px;
+    margin: 10px;
+    font-size: 20px;
+  }
+  
+  .news-area {
+    background-color: #E2DBDB;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    min-height: 500px;
+    font-size: 20px;
+  }
+  
+  .submit-button {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    padding: 20px;
+    border: none;
+    background-color: #E2DBDB;
+    border-radius: 5px;
+  }
+  

@@ -14,7 +14,7 @@ function Home() {
         <img src={cbnu} />
       </div>
       <div>
-        <NewsList />
+        <NewsList/>
       </div>
       <div className="descriptions">
         <h2>프로젝트 설명</h2>

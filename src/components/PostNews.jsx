@@ -2,6 +2,7 @@ import './PostNews.css';
 import React, { useState } from "react";
 import{ Component } from 'react';
 import NewsPostService from "../services/newsPostService"
+import 'bootstrap/dist/css/bootstrap.css'
 class PostNews extends Component {
   constructor(props){
     super(props)

@@ -5,9 +5,12 @@ import './NewsBox.css';
 function NewsBox({ news }) {
   return (
     <div className="post">
-      <h2>{news.title}</h2>
+      <div style={{display:'flex', flexDirection: 'row'}}>
+        <h2 style={{marginRight:20}}>{news.title}</h2>
+        <h3 style={{marginTop:25}}>신뢰도 : {news.reliability}%</h3>
+      </div>
       <h>{news.content}</h>
-      <b>{news.reliability}</b>
+      
     </div>
   )
 }

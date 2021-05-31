@@ -48,7 +48,7 @@ function NewsList(props) {
   };
 
   return (
-    <div>
+    <div style={{flexDirection:'column' ,display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
       <button onClick={clickevent}>API 호출 test</button>
       {news.map(news => (
         <NewsBox news={news} key={news.id} />

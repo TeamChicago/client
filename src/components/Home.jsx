@@ -9,12 +9,12 @@ function Home() {
   // const dispatch = useDispatch();
 
   return (
-    <div>
+    <div style={{display: 'flex', flexDirection: 'column'}}>
       <div className="cbnu-img">
         <img src={cbnu} />
       </div>
-      <div>
-        <NewsList/>
+      <div style={{alignItems: 'center', justifyContent: 'center'}}>
+        <NewsList style={{alignItems: 'center', justifyContent: 'center'}}/>
       </div>
       <div className="descriptions">
         <h2>프로젝트 설명</h2>

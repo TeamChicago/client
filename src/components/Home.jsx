@@ -13,6 +13,7 @@ function Home() {
       <div className="cbnu-img">
         <img src={cbnu} />
       </div>
+      <div style = {{borderWidth: "2px", borderColor:'black'}}/>
       <div>
         <NewsList/>
       </div>

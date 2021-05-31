@@ -6,7 +6,7 @@ function NewsBox({ news }) {
   return (
     <div className="post">
       <h2>{news.title}</h2>
-      <b>{news.content}</b>
+      <h>{news.content}</h>
       <b>{news.reliability}</b>
     </div>
   )

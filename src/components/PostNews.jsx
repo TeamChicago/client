@@ -19,6 +19,9 @@ class PostNews extends Component {
     e.preventDefault()
     console.log(this.state)
     NewsPostService.postNews(this.state)
+    this.props.history.push({
+      pathname: '/',
+    })
   }
 
   render() {

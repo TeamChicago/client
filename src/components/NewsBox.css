@@ -2,8 +2,8 @@
     width: 40%;
     height: 15rem;
     margin-top: 15px;
-    background-color: #E2DBDB;
-    border-radius: 5px;
+    background-color: #fdfdfd;
+    border: 1px solid black;
 }
 
 .post-box {

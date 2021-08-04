@@ -3,6 +3,7 @@ import { Link, Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import './App.css';
 import { history } from "./history";
 
+import logo from "./images/logo.png"
 
 import PostNews from "./components/PostNews";
 import Home from "./components/Home";
@@ -14,7 +15,7 @@ function App() {
         <div className="black-nav">
           <div className="box">
             <Link to={"/"} style={{ color: 'inherit', textDecoration: 'none' }}>
-              <a> Chicago 졸업작품 </a>
+              <img src={logo}/>
             </Link>
           </div>
           <>
@@ -28,10 +29,8 @@ function App() {
       </div>
       <div>
         <Switch>
-
           <Route exact path={["/", "/home"]} component={Home} />
           <Route path="/register" component={PostNews} />
-
         </Switch>
       </div>
     </Router>

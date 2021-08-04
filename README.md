@@ -1,4 +1,4 @@
-# Client of HR-Recommendation-System
+# Fake-News-Detection-System
 
 # Get start
 ```shell

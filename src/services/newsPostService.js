@@ -1,11 +1,11 @@
 import axios from "axios";
-import { API_URL } from "../constants"
+import { MODEL_API_URL } from "../constants"
 
 class NewsPostService {
   async postNews(data) {
     return await axios
       .post(
-        `${API_URL}/news/`
+        `${MODEL_API_URL}/newspost`
       ,{
           title : data.titleValue,
           content : data.contentValue,
